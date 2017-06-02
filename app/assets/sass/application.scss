@@ -218,6 +218,12 @@ $path: "/public/images/";
     }
 }
 
+.chart-block {
+    clear: both;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .graph li .amount {
     display: block;
     height: 100%;
@@ -231,4 +237,19 @@ $path: "/public/images/";
 
 .graph li .amount>* {
     padding-right: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+.graph li .amount {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+}
+
+.graph li {
+    position: relative;
+    display: block;
+    background: #C1DFE4;
+    height: 37px;
 }
