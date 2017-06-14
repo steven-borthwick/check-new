@@ -244,7 +244,6 @@ $path: "/public/images/";
     font-size: 1em;
     line-height: 2em;
   }
-
 }
 
 .graph li {
@@ -253,3 +252,121 @@ $path: "/public/images/";
     background: #C1DFE4;
     height: 37px;
 }
+
+//accordion
+
+.accordion dd, .ni-table dd {
+  padding-top: 10px;
+  padding-bottom: 5px; }
+
+.accordion dt, .ni-table dt {
+  border-top: 1px solid #bfc1c3; }
+
+.accordion2 dd, .ni-table dd {
+  padding-top: 10px;
+  padding-bottom: 5px; }
+
+.accordion2 dt, .ni-table dt {
+  border-top: 1px solid #bfc1c3;
+  padding-top: 10px; }
+
+.ni-wrapper {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  padding: 12px 0 15px 0; }
+
+.ni-years {
+  width: 25%;
+  float: left; }
+
+.ni-years2 {
+  width: 20%;
+  float: left; }
+
+.title {
+  cursor: pointer;
+  margin: 0;
+  color: #005ea5;
+  border: none; }
+
+.ni-cost {
+  width: 25%;
+  float: left; }
+
+.ni-payby {
+  width: 30%;
+  float: left; }
+
+.ni-full {
+  width: 40%;
+  float: left;
+  color: #999; }
+
+.ni-full2 {
+  color: #999; }
+
+.ni-late {
+  width: 50%;
+  float: left;
+  color: #999; }
+
+.ni-notfull {
+  width: 50%;
+  float: left; }
+
+.ni-notfull2 {
+  width: 60%;
+  float: left; }
+
+.ni-action {
+  width: 30%;
+  float: left;
+  text-align: right; }
+
+.nisummary-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.nisummary-text {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.contributions-wrapper {
+  display: block;
+  clear: both;
+  padding: 10px 0px 0px 25%;
+  margin-bottom: 5px;
+  font-size: 16px; }
+
+.contributions-wrapper2 {
+  display: block;
+  clear: both;
+  padding: 0px 0px 0px 20%;
+  margin-bottom: 5px;
+  font-size: 16px; }
+
+.contributions-value {
+  float: left;
+  width: 40%; }
+
+.contributions-header {
+  font-weight: 700;
+  color: #6f777b;
+  margin: 0 0 5px 0; }
+
+@media (max-width: 640px) {
+  .contributions-value {
+    float: left;
+    width: 100%;
+    display: block;
+    clear: both;
+    padding-bottom: 5px; }
+  .contributions-wrapper2 {
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 5px;
+    font-size: 14px; } }
+

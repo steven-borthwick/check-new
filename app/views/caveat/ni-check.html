@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="/feedback">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <div id="global-breadcrumb" class="breadcrumb">
+                <a class="link-back" href="NI_record">Back</a>
+            </div>
+         <article class="content__body">
+    
+
+    
+        <h1 class="heading-large top-title-heading heading-bottom-margin"> Gaps in your record and how to check them </h1>
+    
+    
+
+<p class="lede">In most cases, you will have a gap in your record as you did not contribute enough National Insurance.</p>
+
+<p>This could be because you were:</p>
+<ul class="list-bullet">
+    <li>in paid employment and had low earnings</li>
+    <li>unemployed and not claiming benefit</li>
+    <li>self-employed but did not pay contributions because of small profits</li>
+    <li>living abroad</li>
+    <li>living or working in the Isle of Man</li>
+</ul>
+
+<h2 class="heading-medium">How to check your record</h2>
+<h3>Paid employment</h3>
+<p>Check the contributions you made against P60s from your employers.</p>
+
+<details class="helptext">
+    <summary role="button" aria-expanded="false">
+        <span class="summary">If you do not have P60s</span>
+    </summary>
+    <div class="panel-indent" id="details-content-1">
+        <p>You can get a replacement P60 from your employer. Alternatively, you can find your National Insurance contributions on your payslips.</p>
+    </div>
+</details>
+
+<h3>Self-employment and voluntary contributions</h3>
+<p>Check the contributions you made against your personal accounts. For instance if you made payments by cheque or through your bank.</p>
+<h2 class="heading-medium">If you have evidence that your record is wrong</h2>
+<p>You may be able to correct your record. Send copies of the necessary evidence with a covering letter to:</p>
+<p>Individuals Caseworker<br>National Insurance contributions and Employers Office<br>HM Revenue and Customs<br>BX9 1AN</p>
+
+<h2 class="heading-medium">National Insurance credits</h2>
+<p>If you were claiming benefits because you were unable to work, unemployed or caring for someone full time, these should have been credited automatically. If you think you were entitled to credits that are not on your record, check your eligibility and find out how to get them.</p>
+
+<p><a href="https://www.gov.uk/national-insurance-credits/eligibility" rel="external" target="_blank" data-journey-click="checkmystatepension:external:nationalinsurancecredits">More on National Insurance credits (opens in new tab)</a></p>
+<div class="backlink"><a href="NI_record">Back</a></div>
+
+
+</article>
+
+        </div>
+        <!-- /.column-two-thirds -->
+        <div class="column-third">
+        
+  
+</div>
+
+        </div>
+        <!-- /.column-third -->
+    </div>
+    <!-- /.grid-row -->
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+var allPanels = $('.accordion2 > dd').hide(),
+      allHeaders = $('.accordion2 > dt');
+
+  $('.accordion2 > dt').click(function() {
+    // $(this).parent().children("dd")
+    //   // .hide()
+    //   // .removeClass('active');
+
+    // $(this).parent().children("dt")
+    //   .children('span')
+    //   .removeClass('down');
+
+    if(!$(this).hasClass('active')) {
+      // $(this).parent().children("dt")
+      //   .removeClass('active');
+
+      $(this)
+        .addClass('active')
+        .next()
+        .show();
+
+      $(this).find("a").text("Hide details");
+
+    $(this)
+      .children('span')
+      .addClass('down');
+    }
+    else{
+      $(this)
+        .removeClass('active')
+        .next()
+        .hide();
+
+      $(this).find("a").text("View details");
+    }
+
+    return false;
+  });
+
+</script>
+{% endblock %}
+
+
