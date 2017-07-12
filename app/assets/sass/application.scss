@@ -370,3 +370,19 @@ $path: "/public/images/";
     margin-bottom: 5px;
     font-size: 14px; } }
 
+.panel-border-wide {
+    border-left-width: 10px;
+}
+
+.style1 {
+    border-color: #2b8cc4;
+    background-color: #eaf4f9;
+}
+
+.panel-indent {
+    clear: both;
+    border-left: 10px solid #2b8cc4;;
+    padding: 10px 0 10px 15px;
+    margin: 30px 15px 45px 0;
+}
+
